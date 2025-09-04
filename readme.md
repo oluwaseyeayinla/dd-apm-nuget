@@ -1,3 +1,5 @@
+### Readme
+
 dotnet add package Datadog.Trace.Bundle --version 3.25.0
 
 dotnet add package Datadog.Trace --version 3.25.0
@@ -12,3 +14,8 @@ CORECLR_ENABLE_PROFILING=1 CORECLR_PROFILER='{846F5F1C-F9AE-4B07-969E-05C26BC060
 Bin
 ////
 CORECLR_ENABLE_PROFILING=1 CORECLR_PROFILER={846F5F1C-F9AE-4B07-969E-05C26BC060D8} CORECLR_PROFILER_PATH=/app/datadog/osx-x64/Datadog.Trace.ClrProfiler.Native.dylib" DD_DOTNET_TRACER_HOME=/app/datadog DD_TRACE_AGENT_PORT=8136 dd-trace run -- dotnet dd-apm-nuget.dll
+
+
+---
+
+Updated the readme
