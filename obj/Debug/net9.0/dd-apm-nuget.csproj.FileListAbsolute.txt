@@ -92,6 +92,7 @@
 /Users/oluwaseye.ayinla/Projects/Applications/dotnet/dd-apm-nuget/obj/Debug/net9.0/dd-apm-nuget.AssemblyInfo.cs
 /Users/oluwaseye.ayinla/Projects/Applications/dotnet/dd-apm-nuget/obj/Debug/net9.0/dd-apm-nuget.csproj.CoreCompileInputs.cache
 /Users/oluwaseye.ayinla/Projects/Applications/dotnet/dd-apm-nuget/obj/Debug/net9.0/dd-apm-nuget.MvcApplicationPartsAssemblyInfo.cache
+/Users/oluwaseye.ayinla/Projects/Applications/dotnet/dd-apm-nuget/obj/Debug/net9.0/dd-apm-nuget.sourcelink.json
 /Users/oluwaseye.ayinla/Projects/Applications/dotnet/dd-apm-nuget/obj/Debug/net9.0/rjimswa.dswa.cache.json
 /Users/oluwaseye.ayinla/Projects/Applications/dotnet/dd-apm-nuget/obj/Debug/net9.0/rjsmrazor.dswa.cache.json
 /Users/oluwaseye.ayinla/Projects/Applications/dotnet/dd-apm-nuget/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json

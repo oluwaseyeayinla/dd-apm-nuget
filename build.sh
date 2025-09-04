@@ -1,3 +1,3 @@
 dotnet clean .
 dotnet build .
-docker compose up --build
+git rev-parse HEAD > version.txt

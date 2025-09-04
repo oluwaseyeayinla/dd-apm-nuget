@@ -47,6 +47,11 @@
             "Datadog.Trace.Bundle": {
               "target": "Package",
               "version": "[3.25.0, )"
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
             }
           },
           "imports": [

@@ -3,5 +3,7 @@
   "DD_ENV": "prod",
   "DD_SERVICE": "Config File Service",
   "DD_VERSION": "0.0.1",
-  "DD_TRACE_DEBUG": "true"
+  "DD_TRACE_DEBUG": "true",
+  "DD_GIT_COMMIT_SHA": "674711b2ac208427157e50c35299f656847117f9",
+  "DD_GIT_REPOSITORY_URL": "https://github.com/oluwaseyeayinla/dd-apm-nuget"
 }

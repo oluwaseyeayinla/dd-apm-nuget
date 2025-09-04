@@ -862,6 +862,14 @@
     </Content>
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.sourcelink.common/8.0.0/build/Microsoft.SourceLink.Common.props" Condition="Exists('$(NuGetPackageRoot)microsoft.sourcelink.common/8.0.0/build/Microsoft.SourceLink.Common.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.build.tasks.git/8.0.0/build/Microsoft.Build.Tasks.Git.props" Condition="Exists('$(NuGetPackageRoot)microsoft.build.tasks.git/8.0.0/build/Microsoft.Build.Tasks.Git.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.sourcelink.github/8.0.0/build/Microsoft.SourceLink.GitHub.props" Condition="Exists('$(NuGetPackageRoot)microsoft.sourcelink.github/8.0.0/build/Microsoft.SourceLink.GitHub.props')" />
     <Import Project="$(NuGetPackageRoot)datadog.trace/3.25.0/buildTransitive/Datadog.Trace.props" Condition="Exists('$(NuGetPackageRoot)datadog.trace/3.25.0/buildTransitive/Datadog.Trace.props')" />
   </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_SourceLink_Common Condition=" '$(PkgMicrosoft_SourceLink_Common)' == '' ">/Users/oluwaseye.ayinla/.nuget/packages/microsoft.sourcelink.common/8.0.0</PkgMicrosoft_SourceLink_Common>
+    <PkgMicrosoft_Build_Tasks_Git Condition=" '$(PkgMicrosoft_Build_Tasks_Git)' == '' ">/Users/oluwaseye.ayinla/.nuget/packages/microsoft.build.tasks.git/8.0.0</PkgMicrosoft_Build_Tasks_Git>
+    <PkgMicrosoft_SourceLink_GitHub Condition=" '$(PkgMicrosoft_SourceLink_GitHub)' == '' ">/Users/oluwaseye.ayinla/.nuget/packages/microsoft.sourcelink.github/8.0.0</PkgMicrosoft_SourceLink_GitHub>
+  </PropertyGroup>
 </Project>

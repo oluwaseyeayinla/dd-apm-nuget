@@ -5,10 +5,15 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>dd_apm_nuget</RootNamespace>
+    <!-- START: Enable DD Source linking -->
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <!-- END: Enable DD Source linking -->
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Datadog.Trace.Bundle" Version="3.25.0" />
+      <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All"/>
   </ItemGroup>
 
 </Project>
