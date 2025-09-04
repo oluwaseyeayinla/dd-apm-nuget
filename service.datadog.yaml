@@ -1,4 +1,4 @@
-schema-version: v3
+apiVersion: v3
 kind: service 
 metadata:
   name: bht-shared-communication-svc-api
