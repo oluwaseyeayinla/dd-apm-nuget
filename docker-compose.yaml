@@ -1,0 +1,24 @@
+name: dd-apm-nuget
+services:
+  dd-apm-nuget:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: dd-apm-nuget
+    ports:
+      - "5103:8080"
+    environment:
+      ### .NET Optional Override Environment Variables
+      # - ASPNETCORE_ENVIRONMENT=Development
+      # - ASPNETCORE_URLS=http://+:8080
+      ### DD Tracer Optional Override Environment Variables
+      # - CORECLR_ENABLE_PROFILING=1
+      # - CORECLR_PROFILER={846F5F1C-F9AE-4B07-969E-05C26BC060D8}
+      # - CORECLR_PROFILER_PATH=/opt/datadog/Datadog.Trace.ClrProfiler.Native.so
+      # - DD_DOTNET_TRACER_HOME=/opt/datadog
+      ### DD Tracer Optional Additional Environment Variables
+      - DD_TRACE_STARTUP_LOGS=true
+      - DD_TRACE_DEBUG=true
+      - DD_TRACE_LOG_DIRECTORY=/var/log/datadog/dotnet
+      - DD_TAGS=additional-owner:apm-team
+    command: ["./dataog/dd-dotnet.sh"]

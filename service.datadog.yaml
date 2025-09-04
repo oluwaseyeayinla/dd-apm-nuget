@@ -1,0 +1,37 @@
+schema-version: v3
+kind: service 
+metadata:
+  name: bht-shared-communication-svc-api
+  displayName: Shared Communication Service API
+  description: A service that provides functionality for case notes and comments in the various BHT applications.
+  links:
+    - name: MDE User Guide
+      type: doc 
+      url: https://dhcs-mesmd.atlassian.net/wiki/spaces/DEV/pages/2170257454/MDE+User+Guide+Home+2.0
+      provider: Confluence
+    - name: bht-shared-communication-svc-api
+      type: repo 
+      url: https://github. com/MESMD/bht-shared-communication-svc-api
+      provider: Github
+    - name: Performance Dashboard 
+      type: dashboard
+      url: https://mesmd.datadoghq. com/dashboard/hs4-tds-jsa
+      provider: DataDog
+  contacts:
+    - type: slack
+      contact: https://dhcs-cammis.enterprise.slack.com/archives/C071HBK04G5
+      name: Xenon Eng Team
+  owner: bht-xenon 
+  tags:
+    - app_name:ip-svc-api
+    - tenant:bht
+spec:
+  type: web 
+  tier: supplemental
+  languages:
+    - dotnet
+  lifecycle: Production
+# datadog: 
+#   pipelines:
+#   fingerprints:
+#     - 6bpZDWjehNXb

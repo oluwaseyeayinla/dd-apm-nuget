@@ -1,0 +1,800 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "Datadog.Trace/3.25.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Diagnostics.DiagnosticSource": "4.4.1"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Datadog.Trace.Manual.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Datadog.Trace.Manual.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Datadog.Trace.props": {}
+        }
+      },
+      "Datadog.Trace.Bundle/3.25.0": {
+        "type": "package",
+        "dependencies": {
+          "Datadog.Trace": "3.25.0"
+        },
+        "contentFiles": {
+          "contentFiles/any/any/datadog/createLogPath.sh": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/createLogPath.sh"
+          },
+          "contentFiles/any/any/datadog/dd-dotnet.cmd": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/dd-dotnet.cmd"
+          },
+          "contentFiles/any/any/datadog/dd-dotnet.sh": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/dd-dotnet.sh"
+          },
+          "contentFiles/any/any/datadog/linux-arm64/Datadog.Linux.ApiWrapper.x64.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-arm64/Datadog.Linux.ApiWrapper.x64.so"
+          },
+          "contentFiles/any/any/datadog/linux-arm64/Datadog.Profiler.Native.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-arm64/Datadog.Profiler.Native.so"
+          },
+          "contentFiles/any/any/datadog/linux-arm64/Datadog.Trace.ClrProfiler.Native.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-arm64/Datadog.Trace.ClrProfiler.Native.so"
+          },
+          "contentFiles/any/any/datadog/linux-arm64/Datadog.Tracer.Native.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-arm64/Datadog.Tracer.Native.so"
+          },
+          "contentFiles/any/any/datadog/linux-arm64/dd-dotnet": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-arm64/dd-dotnet"
+          },
+          "contentFiles/any/any/datadog/linux-arm64/libdatadog_profiling.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-arm64/libdatadog_profiling.so"
+          },
+          "contentFiles/any/any/datadog/linux-arm64/libddwaf.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-arm64/libddwaf.so"
+          },
+          "contentFiles/any/any/datadog/linux-arm64/loader.conf": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-arm64/loader.conf"
+          },
+          "contentFiles/any/any/datadog/linux-musl-arm64/Datadog.Linux.ApiWrapper.x64.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-musl-arm64/Datadog.Linux.ApiWrapper.x64.so"
+          },
+          "contentFiles/any/any/datadog/linux-musl-arm64/Datadog.Profiler.Native.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-musl-arm64/Datadog.Profiler.Native.so"
+          },
+          "contentFiles/any/any/datadog/linux-musl-arm64/Datadog.Trace.ClrProfiler.Native.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-musl-arm64/Datadog.Trace.ClrProfiler.Native.so"
+          },
+          "contentFiles/any/any/datadog/linux-musl-arm64/Datadog.Tracer.Native.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-musl-arm64/Datadog.Tracer.Native.so"
+          },
+          "contentFiles/any/any/datadog/linux-musl-arm64/dd-dotnet": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-musl-arm64/dd-dotnet"
+          },
+          "contentFiles/any/any/datadog/linux-musl-arm64/libdatadog_profiling.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-musl-arm64/libdatadog_profiling.so"
+          },
+          "contentFiles/any/any/datadog/linux-musl-arm64/libddwaf.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-musl-arm64/libddwaf.so"
+          },
+          "contentFiles/any/any/datadog/linux-musl-arm64/loader.conf": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-musl-arm64/loader.conf"
+          },
+          "contentFiles/any/any/datadog/linux-musl-x64/Datadog.Linux.ApiWrapper.x64.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-musl-x64/Datadog.Linux.ApiWrapper.x64.so"
+          },
+          "contentFiles/any/any/datadog/linux-musl-x64/Datadog.Profiler.Native.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-musl-x64/Datadog.Profiler.Native.so"
+          },
+          "contentFiles/any/any/datadog/linux-musl-x64/Datadog.Trace.ClrProfiler.Native.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-musl-x64/Datadog.Trace.ClrProfiler.Native.so"
+          },
+          "contentFiles/any/any/datadog/linux-musl-x64/Datadog.Tracer.Native.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-musl-x64/Datadog.Tracer.Native.so"
+          },
+          "contentFiles/any/any/datadog/linux-musl-x64/dd-dotnet": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-musl-x64/dd-dotnet"
+          },
+          "contentFiles/any/any/datadog/linux-musl-x64/libdatadog_profiling.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-musl-x64/libdatadog_profiling.so"
+          },
+          "contentFiles/any/any/datadog/linux-musl-x64/libddwaf.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-musl-x64/libddwaf.so"
+          },
+          "contentFiles/any/any/datadog/linux-musl-x64/loader.conf": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-musl-x64/loader.conf"
+          },
+          "contentFiles/any/any/datadog/linux-x64/Datadog.Linux.ApiWrapper.x64.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-x64/Datadog.Linux.ApiWrapper.x64.so"
+          },
+          "contentFiles/any/any/datadog/linux-x64/Datadog.Profiler.Native.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-x64/Datadog.Profiler.Native.so"
+          },
+          "contentFiles/any/any/datadog/linux-x64/Datadog.Trace.ClrProfiler.Native.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-x64/Datadog.Trace.ClrProfiler.Native.so"
+          },
+          "contentFiles/any/any/datadog/linux-x64/Datadog.Tracer.Native.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-x64/Datadog.Tracer.Native.so"
+          },
+          "contentFiles/any/any/datadog/linux-x64/dd-dotnet": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-x64/dd-dotnet"
+          },
+          "contentFiles/any/any/datadog/linux-x64/libdatadog_profiling.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-x64/libdatadog_profiling.so"
+          },
+          "contentFiles/any/any/datadog/linux-x64/libddwaf.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-x64/libddwaf.so"
+          },
+          "contentFiles/any/any/datadog/linux-x64/loader.conf": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-x64/loader.conf"
+          },
+          "contentFiles/any/any/datadog/net461/Datadog.Trace.MSBuild.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/net461/Datadog.Trace.MSBuild.dll"
+          },
+          "contentFiles/any/any/datadog/net461/Datadog.Trace.MSBuild.pdb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/net461/Datadog.Trace.MSBuild.pdb"
+          },
+          "contentFiles/any/any/datadog/net461/Datadog.Trace.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/net461/Datadog.Trace.dll"
+          },
+          "contentFiles/any/any/datadog/net461/Datadog.Trace.pdb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/net461/Datadog.Trace.pdb"
+          },
+          "contentFiles/any/any/datadog/net6.0/Datadog.Trace.MSBuild.deps.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/net6.0/Datadog.Trace.MSBuild.deps.json"
+          },
+          "contentFiles/any/any/datadog/net6.0/Datadog.Trace.MSBuild.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/net6.0/Datadog.Trace.MSBuild.dll"
+          },
+          "contentFiles/any/any/datadog/net6.0/Datadog.Trace.MSBuild.pdb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/net6.0/Datadog.Trace.MSBuild.pdb"
+          },
+          "contentFiles/any/any/datadog/net6.0/Datadog.Trace.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/net6.0/Datadog.Trace.dll"
+          },
+          "contentFiles/any/any/datadog/net6.0/Datadog.Trace.pdb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/net6.0/Datadog.Trace.pdb"
+          },
+          "contentFiles/any/any/datadog/netcoreapp3.1/Datadog.Trace.MSBuild.deps.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/netcoreapp3.1/Datadog.Trace.MSBuild.deps.json"
+          },
+          "contentFiles/any/any/datadog/netcoreapp3.1/Datadog.Trace.MSBuild.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/netcoreapp3.1/Datadog.Trace.MSBuild.dll"
+          },
+          "contentFiles/any/any/datadog/netcoreapp3.1/Datadog.Trace.MSBuild.pdb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/netcoreapp3.1/Datadog.Trace.MSBuild.pdb"
+          },
+          "contentFiles/any/any/datadog/netcoreapp3.1/Datadog.Trace.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/netcoreapp3.1/Datadog.Trace.dll"
+          },
+          "contentFiles/any/any/datadog/netcoreapp3.1/Datadog.Trace.pdb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/netcoreapp3.1/Datadog.Trace.pdb"
+          },
+          "contentFiles/any/any/datadog/netstandard2.0/Datadog.Trace.MSBuild.deps.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/netstandard2.0/Datadog.Trace.MSBuild.deps.json"
+          },
+          "contentFiles/any/any/datadog/netstandard2.0/Datadog.Trace.MSBuild.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/netstandard2.0/Datadog.Trace.MSBuild.dll"
+          },
+          "contentFiles/any/any/datadog/netstandard2.0/Datadog.Trace.MSBuild.pdb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/netstandard2.0/Datadog.Trace.MSBuild.pdb"
+          },
+          "contentFiles/any/any/datadog/netstandard2.0/Datadog.Trace.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/netstandard2.0/Datadog.Trace.dll"
+          },
+          "contentFiles/any/any/datadog/netstandard2.0/Datadog.Trace.pdb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/netstandard2.0/Datadog.Trace.pdb"
+          },
+          "contentFiles/any/any/datadog/netstandard2.0/System.Diagnostics.DiagnosticSource.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/netstandard2.0/System.Diagnostics.DiagnosticSource.dll"
+          },
+          "contentFiles/any/any/datadog/netstandard2.0/System.Reflection.Emit.ILGeneration.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/netstandard2.0/System.Reflection.Emit.ILGeneration.dll"
+          },
+          "contentFiles/any/any/datadog/netstandard2.0/System.Reflection.Emit.Lightweight.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/netstandard2.0/System.Reflection.Emit.Lightweight.dll"
+          },
+          "contentFiles/any/any/datadog/netstandard2.0/System.Reflection.Emit.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/netstandard2.0/System.Reflection.Emit.dll"
+          },
+          "contentFiles/any/any/datadog/netstandard2.0/System.Threading.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/netstandard2.0/System.Threading.dll"
+          },
+          "contentFiles/any/any/datadog/osx/Datadog.Trace.ClrProfiler.Native.dylib": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/osx/Datadog.Trace.ClrProfiler.Native.dylib"
+          },
+          "contentFiles/any/any/datadog/osx/Datadog.Tracer.Native.dylib": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/osx/Datadog.Tracer.Native.dylib"
+          },
+          "contentFiles/any/any/datadog/osx/libdatadog_profiling.dylib": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/osx/libdatadog_profiling.dylib"
+          },
+          "contentFiles/any/any/datadog/osx/libddwaf.dylib": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/osx/libddwaf.dylib"
+          },
+          "contentFiles/any/any/datadog/osx/loader.conf": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/osx/loader.conf"
+          },
+          "contentFiles/any/any/datadog/win-x64/Datadog.Profiler.Native.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/win-x64/Datadog.Profiler.Native.dll"
+          },
+          "contentFiles/any/any/datadog/win-x64/Datadog.Trace.ClrProfiler.Native.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/win-x64/Datadog.Trace.ClrProfiler.Native.dll"
+          },
+          "contentFiles/any/any/datadog/win-x64/Datadog.Tracer.Native.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/win-x64/Datadog.Tracer.Native.dll"
+          },
+          "contentFiles/any/any/datadog/win-x64/datadog_profiling_ffi.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/win-x64/datadog_profiling_ffi.dll"
+          },
+          "contentFiles/any/any/datadog/win-x64/dd-dotnet.exe": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/win-x64/dd-dotnet.exe"
+          },
+          "contentFiles/any/any/datadog/win-x64/ddwaf.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/win-x64/ddwaf.dll"
+          },
+          "contentFiles/any/any/datadog/win-x64/loader.conf": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/win-x64/loader.conf"
+          },
+          "contentFiles/any/any/datadog/win-x86/Datadog.Profiler.Native.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/win-x86/Datadog.Profiler.Native.dll"
+          },
+          "contentFiles/any/any/datadog/win-x86/Datadog.Trace.ClrProfiler.Native.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/win-x86/Datadog.Trace.ClrProfiler.Native.dll"
+          },
+          "contentFiles/any/any/datadog/win-x86/Datadog.Tracer.Native.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/win-x86/Datadog.Tracer.Native.dll"
+          },
+          "contentFiles/any/any/datadog/win-x86/datadog_profiling_ffi.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/win-x86/datadog_profiling_ffi.dll"
+          },
+          "contentFiles/any/any/datadog/win-x86/ddwaf.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/win-x86/ddwaf.dll"
+          },
+          "contentFiles/any/any/datadog/win-x86/loader.conf": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/win-x86/loader.conf"
+          }
+        }
+      },
+      "System.Diagnostics.DiagnosticSource/4.4.1": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Datadog.Trace/3.25.0": {
+      "sha512": "7X3WAfELRwKpAdO0GZeg1BxhUv9wdqgkWxEBTmfA6nLff+HwZuSAhY+YgdwAVYEjRy/NHQlBysJ5UPx8SQZ70w==",
+      "type": "package",
+      "path": "datadog.trace/3.25.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Datadog.Trace.Trimming.xml",
+        "build/Datadog.Trace.props",
+        "buildTransitive/Datadog.Trace.Trimming.xml",
+        "buildTransitive/Datadog.Trace.props",
+        "datadog.trace.3.25.0.nupkg.sha512",
+        "datadog.trace.nuspec",
+        "lib/net461/Datadog.Trace.Manual.dll",
+        "lib/net461/Datadog.Trace.Manual.xml",
+        "lib/netcoreapp3.1/Datadog.Trace.Manual.dll",
+        "lib/netcoreapp3.1/Datadog.Trace.Manual.xml",
+        "lib/netstandard2.0/Datadog.Trace.Manual.dll",
+        "lib/netstandard2.0/Datadog.Trace.Manual.xml",
+        "packageIcon.png"
+      ]
+    },
+    "Datadog.Trace.Bundle/3.25.0": {
+      "sha512": "Fq09/vDGpqDxpaB1AXyWz444+AqxBJLQWdqzIcXr/ridd+wZI3kUL852sGqqGhT94ThbKJiC/8qiyMsCl4A5zw==",
+      "type": "package",
+      "path": "datadog.trace.bundle/3.25.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "content/datadog/createLogPath.sh",
+        "content/datadog/dd-dotnet.cmd",
+        "content/datadog/dd-dotnet.sh",
+        "content/datadog/linux-arm64/Datadog.Linux.ApiWrapper.x64.so",
+        "content/datadog/linux-arm64/Datadog.Profiler.Native.so",
+        "content/datadog/linux-arm64/Datadog.Trace.ClrProfiler.Native.so",
+        "content/datadog/linux-arm64/Datadog.Tracer.Native.so",
+        "content/datadog/linux-arm64/dd-dotnet",
+        "content/datadog/linux-arm64/libdatadog_profiling.so",
+        "content/datadog/linux-arm64/libddwaf.so",
+        "content/datadog/linux-arm64/loader.conf",
+        "content/datadog/linux-musl-arm64/Datadog.Linux.ApiWrapper.x64.so",
+        "content/datadog/linux-musl-arm64/Datadog.Profiler.Native.so",
+        "content/datadog/linux-musl-arm64/Datadog.Trace.ClrProfiler.Native.so",
+        "content/datadog/linux-musl-arm64/Datadog.Tracer.Native.so",
+        "content/datadog/linux-musl-arm64/dd-dotnet",
+        "content/datadog/linux-musl-arm64/libdatadog_profiling.so",
+        "content/datadog/linux-musl-arm64/libddwaf.so",
+        "content/datadog/linux-musl-arm64/loader.conf",
+        "content/datadog/linux-musl-x64/Datadog.Linux.ApiWrapper.x64.so",
+        "content/datadog/linux-musl-x64/Datadog.Profiler.Native.so",
+        "content/datadog/linux-musl-x64/Datadog.Trace.ClrProfiler.Native.so",
+        "content/datadog/linux-musl-x64/Datadog.Tracer.Native.so",
+        "content/datadog/linux-musl-x64/dd-dotnet",
+        "content/datadog/linux-musl-x64/libdatadog_profiling.so",
+        "content/datadog/linux-musl-x64/libddwaf.so",
+        "content/datadog/linux-musl-x64/loader.conf",
+        "content/datadog/linux-x64/Datadog.Linux.ApiWrapper.x64.so",
+        "content/datadog/linux-x64/Datadog.Profiler.Native.so",
+        "content/datadog/linux-x64/Datadog.Trace.ClrProfiler.Native.so",
+        "content/datadog/linux-x64/Datadog.Tracer.Native.so",
+        "content/datadog/linux-x64/dd-dotnet",
+        "content/datadog/linux-x64/libdatadog_profiling.so",
+        "content/datadog/linux-x64/libddwaf.so",
+        "content/datadog/linux-x64/loader.conf",
+        "content/datadog/net461/Datadog.Trace.MSBuild.dll",
+        "content/datadog/net461/Datadog.Trace.MSBuild.pdb",
+        "content/datadog/net461/Datadog.Trace.dll",
+        "content/datadog/net461/Datadog.Trace.pdb",
+        "content/datadog/net6.0/Datadog.Trace.MSBuild.deps.json",
+        "content/datadog/net6.0/Datadog.Trace.MSBuild.dll",
+        "content/datadog/net6.0/Datadog.Trace.MSBuild.pdb",
+        "content/datadog/net6.0/Datadog.Trace.dll",
+        "content/datadog/net6.0/Datadog.Trace.pdb",
+        "content/datadog/netcoreapp3.1/Datadog.Trace.MSBuild.deps.json",
+        "content/datadog/netcoreapp3.1/Datadog.Trace.MSBuild.dll",
+        "content/datadog/netcoreapp3.1/Datadog.Trace.MSBuild.pdb",
+        "content/datadog/netcoreapp3.1/Datadog.Trace.dll",
+        "content/datadog/netcoreapp3.1/Datadog.Trace.pdb",
+        "content/datadog/netstandard2.0/Datadog.Trace.MSBuild.deps.json",
+        "content/datadog/netstandard2.0/Datadog.Trace.MSBuild.dll",
+        "content/datadog/netstandard2.0/Datadog.Trace.MSBuild.pdb",
+        "content/datadog/netstandard2.0/Datadog.Trace.dll",
+        "content/datadog/netstandard2.0/Datadog.Trace.pdb",
+        "content/datadog/netstandard2.0/System.Diagnostics.DiagnosticSource.dll",
+        "content/datadog/netstandard2.0/System.Reflection.Emit.ILGeneration.dll",
+        "content/datadog/netstandard2.0/System.Reflection.Emit.Lightweight.dll",
+        "content/datadog/netstandard2.0/System.Reflection.Emit.dll",
+        "content/datadog/netstandard2.0/System.Threading.dll",
+        "content/datadog/osx/Datadog.Trace.ClrProfiler.Native.dylib",
+        "content/datadog/osx/Datadog.Tracer.Native.dylib",
+        "content/datadog/osx/libdatadog_profiling.dylib",
+        "content/datadog/osx/libddwaf.dylib",
+        "content/datadog/osx/loader.conf",
+        "content/datadog/win-x64/Datadog.Profiler.Native.dll",
+        "content/datadog/win-x64/Datadog.Trace.ClrProfiler.Native.dll",
+        "content/datadog/win-x64/Datadog.Tracer.Native.dll",
+        "content/datadog/win-x64/datadog_profiling_ffi.dll",
+        "content/datadog/win-x64/dd-dotnet.exe",
+        "content/datadog/win-x64/ddwaf.dll",
+        "content/datadog/win-x64/loader.conf",
+        "content/datadog/win-x86/Datadog.Profiler.Native.dll",
+        "content/datadog/win-x86/Datadog.Trace.ClrProfiler.Native.dll",
+        "content/datadog/win-x86/Datadog.Tracer.Native.dll",
+        "content/datadog/win-x86/datadog_profiling_ffi.dll",
+        "content/datadog/win-x86/ddwaf.dll",
+        "content/datadog/win-x86/loader.conf",
+        "contentFiles/any/any/datadog/createLogPath.sh",
+        "contentFiles/any/any/datadog/dd-dotnet.cmd",
+        "contentFiles/any/any/datadog/dd-dotnet.sh",
+        "contentFiles/any/any/datadog/linux-arm64/Datadog.Linux.ApiWrapper.x64.so",
+        "contentFiles/any/any/datadog/linux-arm64/Datadog.Profiler.Native.so",
+        "contentFiles/any/any/datadog/linux-arm64/Datadog.Trace.ClrProfiler.Native.so",
+        "contentFiles/any/any/datadog/linux-arm64/Datadog.Tracer.Native.so",
+        "contentFiles/any/any/datadog/linux-arm64/dd-dotnet",
+        "contentFiles/any/any/datadog/linux-arm64/libdatadog_profiling.so",
+        "contentFiles/any/any/datadog/linux-arm64/libddwaf.so",
+        "contentFiles/any/any/datadog/linux-arm64/loader.conf",
+        "contentFiles/any/any/datadog/linux-musl-arm64/Datadog.Linux.ApiWrapper.x64.so",
+        "contentFiles/any/any/datadog/linux-musl-arm64/Datadog.Profiler.Native.so",
+        "contentFiles/any/any/datadog/linux-musl-arm64/Datadog.Trace.ClrProfiler.Native.so",
+        "contentFiles/any/any/datadog/linux-musl-arm64/Datadog.Tracer.Native.so",
+        "contentFiles/any/any/datadog/linux-musl-arm64/dd-dotnet",
+        "contentFiles/any/any/datadog/linux-musl-arm64/libdatadog_profiling.so",
+        "contentFiles/any/any/datadog/linux-musl-arm64/libddwaf.so",
+        "contentFiles/any/any/datadog/linux-musl-arm64/loader.conf",
+        "contentFiles/any/any/datadog/linux-musl-x64/Datadog.Linux.ApiWrapper.x64.so",
+        "contentFiles/any/any/datadog/linux-musl-x64/Datadog.Profiler.Native.so",
+        "contentFiles/any/any/datadog/linux-musl-x64/Datadog.Trace.ClrProfiler.Native.so",
+        "contentFiles/any/any/datadog/linux-musl-x64/Datadog.Tracer.Native.so",
+        "contentFiles/any/any/datadog/linux-musl-x64/dd-dotnet",
+        "contentFiles/any/any/datadog/linux-musl-x64/libdatadog_profiling.so",
+        "contentFiles/any/any/datadog/linux-musl-x64/libddwaf.so",
+        "contentFiles/any/any/datadog/linux-musl-x64/loader.conf",
+        "contentFiles/any/any/datadog/linux-x64/Datadog.Linux.ApiWrapper.x64.so",
+        "contentFiles/any/any/datadog/linux-x64/Datadog.Profiler.Native.so",
+        "contentFiles/any/any/datadog/linux-x64/Datadog.Trace.ClrProfiler.Native.so",
+        "contentFiles/any/any/datadog/linux-x64/Datadog.Tracer.Native.so",
+        "contentFiles/any/any/datadog/linux-x64/dd-dotnet",
+        "contentFiles/any/any/datadog/linux-x64/libdatadog_profiling.so",
+        "contentFiles/any/any/datadog/linux-x64/libddwaf.so",
+        "contentFiles/any/any/datadog/linux-x64/loader.conf",
+        "contentFiles/any/any/datadog/net461/Datadog.Trace.MSBuild.dll",
+        "contentFiles/any/any/datadog/net461/Datadog.Trace.MSBuild.pdb",
+        "contentFiles/any/any/datadog/net461/Datadog.Trace.dll",
+        "contentFiles/any/any/datadog/net461/Datadog.Trace.pdb",
+        "contentFiles/any/any/datadog/net6.0/Datadog.Trace.MSBuild.deps.json",
+        "contentFiles/any/any/datadog/net6.0/Datadog.Trace.MSBuild.dll",
+        "contentFiles/any/any/datadog/net6.0/Datadog.Trace.MSBuild.pdb",
+        "contentFiles/any/any/datadog/net6.0/Datadog.Trace.dll",
+        "contentFiles/any/any/datadog/net6.0/Datadog.Trace.pdb",
+        "contentFiles/any/any/datadog/netcoreapp3.1/Datadog.Trace.MSBuild.deps.json",
+        "contentFiles/any/any/datadog/netcoreapp3.1/Datadog.Trace.MSBuild.dll",
+        "contentFiles/any/any/datadog/netcoreapp3.1/Datadog.Trace.MSBuild.pdb",
+        "contentFiles/any/any/datadog/netcoreapp3.1/Datadog.Trace.dll",
+        "contentFiles/any/any/datadog/netcoreapp3.1/Datadog.Trace.pdb",
+        "contentFiles/any/any/datadog/netstandard2.0/Datadog.Trace.MSBuild.deps.json",
+        "contentFiles/any/any/datadog/netstandard2.0/Datadog.Trace.MSBuild.dll",
+        "contentFiles/any/any/datadog/netstandard2.0/Datadog.Trace.MSBuild.pdb",
+        "contentFiles/any/any/datadog/netstandard2.0/Datadog.Trace.dll",
+        "contentFiles/any/any/datadog/netstandard2.0/Datadog.Trace.pdb",
+        "contentFiles/any/any/datadog/netstandard2.0/System.Diagnostics.DiagnosticSource.dll",
+        "contentFiles/any/any/datadog/netstandard2.0/System.Reflection.Emit.ILGeneration.dll",
+        "contentFiles/any/any/datadog/netstandard2.0/System.Reflection.Emit.Lightweight.dll",
+        "contentFiles/any/any/datadog/netstandard2.0/System.Reflection.Emit.dll",
+        "contentFiles/any/any/datadog/netstandard2.0/System.Threading.dll",
+        "contentFiles/any/any/datadog/osx/Datadog.Trace.ClrProfiler.Native.dylib",
+        "contentFiles/any/any/datadog/osx/Datadog.Tracer.Native.dylib",
+        "contentFiles/any/any/datadog/osx/libdatadog_profiling.dylib",
+        "contentFiles/any/any/datadog/osx/libddwaf.dylib",
+        "contentFiles/any/any/datadog/osx/loader.conf",
+        "contentFiles/any/any/datadog/win-x64/Datadog.Profiler.Native.dll",
+        "contentFiles/any/any/datadog/win-x64/Datadog.Trace.ClrProfiler.Native.dll",
+        "contentFiles/any/any/datadog/win-x64/Datadog.Tracer.Native.dll",
+        "contentFiles/any/any/datadog/win-x64/datadog_profiling_ffi.dll",
+        "contentFiles/any/any/datadog/win-x64/dd-dotnet.exe",
+        "contentFiles/any/any/datadog/win-x64/ddwaf.dll",
+        "contentFiles/any/any/datadog/win-x64/loader.conf",
+        "contentFiles/any/any/datadog/win-x86/Datadog.Profiler.Native.dll",
+        "contentFiles/any/any/datadog/win-x86/Datadog.Trace.ClrProfiler.Native.dll",
+        "contentFiles/any/any/datadog/win-x86/Datadog.Tracer.Native.dll",
+        "contentFiles/any/any/datadog/win-x86/datadog_profiling_ffi.dll",
+        "contentFiles/any/any/datadog/win-x86/ddwaf.dll",
+        "contentFiles/any/any/datadog/win-x86/loader.conf",
+        "datadog.trace.bundle.3.25.0.nupkg.sha512",
+        "datadog.trace.bundle.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "System.Diagnostics.DiagnosticSource/4.4.1": {
+      "sha512": "U/KcC19fyLsPN1GLmeU2zQq15MMVcPwMOYPADVo1+WIoJpvMHxrzvl+BLLZwTEZSneGwaPFZ0aWr0nJ7B7LSdA==",
+      "type": "package",
+      "path": "system.diagnostics.diagnosticsource/4.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net45/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net45/System.Diagnostics.DiagnosticSource.xml",
+        "lib/net46/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net46/System.Diagnostics.DiagnosticSource.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.1/System.Diagnostics.DiagnosticSource.dll",
+        "lib/netstandard1.1/System.Diagnostics.DiagnosticSource.xml",
+        "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll",
+        "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.xml",
+        "lib/portable-net45+win8+wpa81/System.Diagnostics.DiagnosticSource.dll",
+        "lib/portable-net45+win8+wpa81/System.Diagnostics.DiagnosticSource.xml",
+        "ref/netcoreapp2.0/_._",
+        "system.diagnostics.diagnosticsource.4.4.1.nupkg.sha512",
+        "system.diagnostics.diagnosticsource.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "Datadog.Trace.Bundle >= 3.25.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/oluwaseye.ayinla/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/oluwaseye.ayinla/Projects/Applications/dotnet/dd-apm-nuget/dd-apm-nuget.csproj",
+      "projectName": "dd-apm-nuget",
+      "projectPath": "/Users/oluwaseye.ayinla/Projects/Applications/dotnet/dd-apm-nuget/dd-apm-nuget.csproj",
+      "packagesPath": "/Users/oluwaseye.ayinla/.nuget/packages/",
+      "outputPath": "/Users/oluwaseye.ayinla/Projects/Applications/dotnet/dd-apm-nuget/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/oluwaseye.ayinla/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "dependencies": {
+          "Datadog.Trace.Bundle": {
+            "target": "Package",
+            "version": "[3.25.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.304/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

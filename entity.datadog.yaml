@@ -1,0 +1,22 @@
+# schema-version: v2.2
+# dd-service: my-unmonitored-cron-job
+# team: e-commerce
+# lifecycle: production
+# application: shopping-app
+# description: important cron job for shopist backend
+# tier: "2"
+# type: web
+# contacts:
+#   - type: slack
+#     contact: https://datadogincidents.slack.com/archives/XXXXX
+#     links:
+#       - name: Common Operations
+#         type: runbook
+#         url: https://datadoghq.atlassian.net/wiki/
+#       - name: Disabling Deployments
+#         type: runbook
+#         url: https://datadoghq.atlassian.net/wiki/
+# tags: []
+# integrations:
+#   pagerduty:
+#     service-url: https://datadog.pagerduty.com/service-directory/XXXXXXX

@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dd-apm-nuget", "dd-apm-nuget.csproj", "{C7D5D9F5-5C82-A05B-FC43-6A61CA5566E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7D5D9F5-5C82-A05B-FC43-6A61CA5566E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7D5D9F5-5C82-A05B-FC43-6A61CA5566E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7D5D9F5-5C82-A05B-FC43-6A61CA5566E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7D5D9F5-5C82-A05B-FC43-6A61CA5566E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {58EA5D03-A77B-4D5D-B2E6-B52642A3EC19}
+	EndGlobalSection
+EndGlobal

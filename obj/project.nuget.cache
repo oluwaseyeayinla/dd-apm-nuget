@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "qd1bb0G4xlk=",
+  "success": true,
+  "projectFilePath": "/Users/oluwaseye.ayinla/Projects/Applications/dotnet/dd-apm-nuget/dd-apm-nuget.csproj",
+  "expectedPackageFiles": [
+    "/Users/oluwaseye.ayinla/.nuget/packages/datadog.trace/3.25.0/datadog.trace.3.25.0.nupkg.sha512",
+    "/Users/oluwaseye.ayinla/.nuget/packages/datadog.trace.bundle/3.25.0/datadog.trace.bundle.3.25.0.nupkg.sha512",
+    "/Users/oluwaseye.ayinla/.nuget/packages/system.diagnostics.diagnosticsource/4.4.1/system.diagnostics.diagnosticsource.4.4.1.nupkg.sha512"
+  ],
+  "logs": []
+}

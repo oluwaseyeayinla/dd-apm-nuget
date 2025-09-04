@@ -1,0 +1,7 @@
+{
+  "DD_TRACE_AGENT_URL": "http://localhost:8136",
+  "DD_ENV": "prod",
+  "DD_SERVICE": "Config File Service",
+  "DD_VERSION": "0.0.1",
+  "DD_TRACE_DEBUG": "true"
+}
